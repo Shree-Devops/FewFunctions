@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Learning TestNG Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="TestNGLearning.MyListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="2" name="Login test(failed)" parallel="methods">
+    <parameter name="myname" value="Shree"/>
+    <parameter name="yourname" value="mohini"/>
+    <classes>
+      <class name="TestNGLearning.Testcase2">
+        <methods>
+          <include name="retrieveData" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- TestNGLearning.Testcase2 -->
+    </classes>
+  </test> <!-- Login test(failed) -->
+</suite> <!-- Failed suite [Learning TestNG Suite] -->
