@@ -4,14 +4,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+//import org.sikuli.script.FindFailed;
+//import org.sikuli.script.Pattern;
+//import org.sikuli.script.Screen;
 
 public class UploadFile_Sikuli {
 	static WebDriver driver;
 	
-	public static void main(String[] args) throws InterruptedException, FindFailed {
+	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\Ranu documents\\Selenium\\Applications\\chromedriver.exe");
 		driver = new ChromeDriver();

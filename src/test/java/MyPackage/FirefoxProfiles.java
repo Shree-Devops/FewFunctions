@@ -1,6 +1,7 @@
 package MyPackage;
 
-import org.apache.commons.net.util.Base64;
+import org.apache.commons.codec.binary.Base64;
+//import org.apache.commons.net.util.Base64;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;

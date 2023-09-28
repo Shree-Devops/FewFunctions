@@ -16,7 +16,7 @@ import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.internal.EventFiringMouse;
 
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+//import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 
 public class MyWebListenerTest {
 
@@ -40,8 +40,5 @@ public class MyWebListenerTest {
 		
 
 	}
-
-
-
 
 }

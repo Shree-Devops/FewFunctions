@@ -6,7 +6,7 @@
 		<listener class-name="TestNGLearning.MyListeners"></listener>
 		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
 	</listeners>
-	<test name="Login test">
+	<test name="test">
 	
 		 <parameter name = "myname" value = "Shree"/>
 		 <parameter name = "yourname" value = "mohini"/>

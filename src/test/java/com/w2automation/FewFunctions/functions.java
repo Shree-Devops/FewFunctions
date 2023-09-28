@@ -43,22 +43,22 @@ public class functions {
 		File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshot, new File( System.getProperty("user.dir") +  "//screenshot//" + filename));
 	}
-	/*
+	
 	public static void main(String[] args) throws InterruptedException, IOException, SQLException {
 		
 		DBManager.setDBConnection();// to establish connection from data base
 		System.out.println(DBManager.getMySQLQuery("Select tutorial_author from selenium;"));// to run the query
-		*/
-	/*	
+	
+		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-	*/	
+	
 		//driver.get("https://jqueryui.com/resources/demos/slider/default.html");
 		
 		//Slider practice - https://jqueryui.com/resources/demos/slider/default.html
-		/*
+	/*
 		Actions act = new Actions(driver);
 		
 				WebElement ele = driver.findElement(By.xpath("//div[@id='slider']"));
@@ -98,17 +98,25 @@ public class functions {
 			//Or
 			Alert alert = driver.switchTo().alert();
 			alert.getText();
-
+*/
+	
 		// Frames
+		String id; String name;
 		driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_submit_get");
 		List<WebElement> frames = driver.findElements(By.tagName("iframe"));
 		System.out.println(frames.size());
-		for (WebElement frame: frames) {
-			System.out.println(frame.getAttribute("id"));
+		for (WebElement myframe: frames) {
+			id = myframe.getAttribute("id");
+			name = myframe.getAttribute("name");
 		}
-		driver.switchTo().frame("iframeResult");
+		driver.switchTo().frame("id"); 
+		//Or 
+		driver.switchTo().frame("name");
+		//Or 
+		WebElement webelementOfFrame = null;
+		driver.switchTo().frame(webelementOfFrame);
 		driver.findElement(By.xpath("//button[contains(text(),'Try it')]")).click();
-	*/
+		driver.switchTo().defaultContent(); // Switch back from current frame
 				/*
 		// handling Multiple windows or tabs
 				
@@ -203,5 +211,5 @@ public class functions {
 				
 				*/
 				//driver.close();
-	//}
+	}
 }

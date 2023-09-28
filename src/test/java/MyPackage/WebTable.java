@@ -5,8 +5,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.ie.*;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+//import com.google.protobuf.Duration;
+//import javax.xml.datatype.Duration;
+import java.time.Duration;
 
 public class WebTable {
 	static WebDriver driver;
@@ -43,7 +51,7 @@ public class WebTable {
 			}
 			System.out.println();
 		}
-	
+		
 	}
 	
 }
