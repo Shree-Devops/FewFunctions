@@ -11,7 +11,7 @@ options {
 		stage('checkout'){
 			steps{
 				echo 'checking out!!'
-				git 'https://github.com/Shree-Devops/JenkinsPractice.git'
+				git 'https://github.com/Shree-Devops/FewFunctions.git'
 			}
 		}
 		stage('build'){
